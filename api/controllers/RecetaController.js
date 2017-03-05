@@ -23,7 +23,7 @@ module.exports = {
 	encontrars : function(req,res){
 		var ingrediente = req.allParams().ingrediente;
 		Ingrediente.findOne(ingrediente).populate("recetas").then(function(ingrediente){
-			res.json(ingrediente.recetas);
+			res.json(ingrediente.recetas); 
 		})
 	}
 };
