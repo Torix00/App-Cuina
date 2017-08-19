@@ -25,6 +25,12 @@ module.exports = {
 		Ingrediente.findOne(ingrediente).populate("recetas").then(function(ingrediente){
 			res.json(ingrediente.recetas); 
 		})
-	}
-};
+	},/*
+	encontrarss : function(req,res){
+		var receta = req.allParams().receta;
+		Receta.findOne(receta).populate("categorias").then(function(receta){
+			res.json(receta.categorias); 
+		})*/
+};	
+
 

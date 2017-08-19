@@ -8,10 +8,18 @@
 module.exports = {
 
   attributes: {
+  	nombre : {
+  		type : 'string',
+  		required : true,
+  	},
   	recetas : {
   		collection : "receta",
   		via : "ingredientes"
-  	}
+  	},
+    cantidad : {
+  		type : 'float',
+  		required : false,
+    }
   }
 };
 

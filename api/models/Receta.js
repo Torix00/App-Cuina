@@ -8,11 +8,26 @@
 module.exports = {
 
   attributes: {
-  	ingredientes :{
+    
+    nombre :{
+      type:'string',
+      required : true,
+    },
+    ingredientes :{
   		collection:"ingrediente",
   		via:"recetas",
   		dominant : true
-  	}
-  }
+  	},
+    numpers :{
+      type: 'float',
+      required : true,
+    }
+    /*
+    categorias: {
+  		collection : "categoria",
+  		via : "recetas"
+  	}*/
+
+  } 
 };
 
